@@ -1,0 +1,19 @@
+{
+  "OpenGVLab": "https://huggingface.co/OpenGVLab",
+  "InternLM": "https://huggingface.co/internlm",
+  "OpenDataLab": "https://huggingface.co/opendatalab",
+  "AI4Chem": "https://huggingface.co/AI4Chem",
+  "lmsys": "https://huggingface.co/lmsys",
+  "tiiuae": "https://huggingface.co/tiiuae",
+  "facebook": "https://huggingface.co/facebook",
+  "THUDM": "https://huggingface.co/THUDM",
+  "Modelscope": "https://huggingface.co/modelscope",
+  "Qwen": "https://huggingface.co/Qwen",
+  "huawei-noah": "https://huggingface.co/huawei-noah",
+  "google": "https://huggingface.co/google",
+  "baichuan-inc": "https://huggingface.co/baichuan-inc",
+  "qianyan": "",
+  "EleutherAI": "https://huggingface.co/EleutherAI",
+  "BAAI": "https://huggingface.co/BAAI",
+  "Baidu": "https://huggingface.co/baidu"
+}
