@@ -15,6 +15,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # 根据自己的代理地址和端口填写，也可以不设置注释掉
 os.environ['ALL_PROXY'] = 'http://127.0.0.1:7890'
+# 如果chrome不是默认安装位置,请修改为你的实际路径
+chrome_exe_path = None
+# chrome_exe_path = r"C:\software\chromex64\chrome.exe"
 
 
 def init_driver(headless=True):
@@ -29,9 +32,11 @@ def init_driver(headless=True):
     options.add_argument('--disable-gpu')
     options.add_argument('--start-maximized')
     # options.add_argument('--proxy-server=http://your_proxy_address:port')  # 设置代理地址和端口
-
+    if chrome_exe_path:
+        options.binary_location = chrome_exe_path # 设置Chrome浏览器路径
     # 使用webdriver-manager自动下载并启动chrome驱动
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service = service, options=options)
     return driver
 
 
